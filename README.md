@@ -1,6 +1,7 @@
-# Imobiliária KS — Vila Coral
+# Imobiliária KS — Imóveis em Bombinhas
 
-Landing page de captação para o lançamento Vila Coral, em Canto Grande, Bombinhas/SC.
+Landing page de captação da Imobiliária KS para imóveis prontos, investimentos
+e lançamentos em diferentes regiões de Bombinhas/SC.
 
 ## Desenvolvimento
 
