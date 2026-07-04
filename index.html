@@ -3,19 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Encontre imóveis prontos, para temporada e lançamentos em Bombinhas com a curadoria local da Imobiliária KS.">
+  <title>Imóveis em Bombinhas/SC — Prontos e Lançamentos | KS</title>
+  <meta name="description" content="Casas, apartamentos e lançamentos em Bombinhas/SC selecionados pela Imobiliária KS. Curadoria local para morar, investir ou viver a temporada. Fale com a equipe.">
   <meta name="theme-color" content="#082f38">
   <meta name="crm-endpoint" content="">
-  <title>Imóveis em Bombinhas | KS Imóveis</title>
+  <!-- TODO: confirmar domínio de produção com o cliente e atualizar canonical/OG/JSON-LD/sitemap -->
+  <link rel="canonical" href="https://www.imobiliariaks.com.br/">
+
+  <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Imobiliária KS">
+  <meta property="og:title" content="Imóveis em Bombinhas/SC — Prontos e Lançamentos | KS">
+  <meta property="og:description" content="Casas, apartamentos e lançamentos em Bombinhas/SC selecionados pela Imobiliária KS. Curadoria local para morar, investir ou viver a temporada.">
+  <meta property="og:url" content="https://www.imobiliariaks.com.br/">
+  <meta property="og:image" content="https://www.imobiliariaks.com.br/assets/hero.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Imóveis em Bombinhas/SC — Prontos e Lançamentos | KS">
+  <meta name="twitter:description" content="Casas, apartamentos e lançamentos em Bombinhas/SC selecionados pela Imobiliária KS.">
+  <meta name="twitter:image" content="https://www.imobiliariaks.com.br/assets/hero.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./public/assets/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="./public/assets/logo.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="./public/assets/hero.jpg" fetchpriority="high">
   <link rel="stylesheet" href="./src/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "RealEstateAgent",
+        "@id": "https://www.imobiliariaks.com.br/#organization",
+        "name": "Imobiliária KS",
+        "alternateName": "KS Imóveis",
+        "identifier": "CRECI 8662-J",
+        "url": "https://www.imobiliariaks.com.br/",
+        "logo": "https://www.imobiliariaks.com.br/assets/logo.png",
+        "image": "https://www.imobiliariaks.com.br/assets/hero.jpg",
+        "description": "Imobiliária especializada em imóveis prontos, para temporada e lançamentos em Bombinhas, Santa Catarina.",
+        "telephone": "+55-47-99287-7202",
+        "email": "contato@imobiliariaks.com.br",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua Castanheta, 84, Sala 02",
+          "addressLocality": "Bombinhas",
+          "addressRegion": "SC",
+          "addressCountry": "BR"
+        },
+        "areaServed": [
+          { "@type": "Place", "name": "Bombas" },
+          { "@type": "Place", "name": "Bombinhas" },
+          { "@type": "Place", "name": "Mariscal" },
+          { "@type": "Place", "name": "Canto Grande" },
+          { "@type": "Place", "name": "Quatro Ilhas" },
+          { "@type": "Place", "name": "Morrinhos" }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.imobiliariaks.com.br/#website",
+        "url": "https://www.imobiliariaks.com.br/",
+        "name": "Imobiliária KS",
+        "publisher": { "@id": "https://www.imobiliariaks.com.br/#organization" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="header">
     <a class="brand" href="#inicio" aria-label="KS Imóveis — início">
-      <img src="./public/assets/logo.png" alt="KS Imóveis">
+      <img src="./public/assets/logo.png" alt="KS Imóveis" width="106" height="146">
     </a>
     <nav aria-label="Navegação principal">
       <a href="#perfis">O que você busca</a>
@@ -106,15 +174,15 @@
 
     <section class="search-paths">
       <article class="path reveal" data-interest="Pronto para morar">
-        <figure><img src="./public/assets/property-apartment.png" alt="Apartamento mobiliado com vista para o mar"></figure>
+        <figure><img src="./public/assets/property-apartment.png" alt="Apartamento mobiliado com vista para o mar" width="1800" height="1098" loading="lazy" decoding="async"></figure>
         <div><span>01</span><h3>Prontos para viver agora</h3><p>Apartamentos e casas mobiliados, perto do mar e prontos para morar ou aproveitar a temporada.</p><a href="#contato">Quero ver opções ↗</a></div>
       </article>
       <article class="path reveal" data-interest="Investimento para temporada">
-        <figure><img src="./public/assets/lifestyle.jpg" alt="Imóvel pensado para viver e investir no litoral"></figure>
+        <figure><img src="./public/assets/lifestyle.jpg" alt="Imóvel pensado para viver e investir no litoral" width="1152" height="900" loading="lazy" decoding="async"></figure>
         <div><span>02</span><h3>Investimento & temporada</h3><p>Imóveis com perfil para locação, boa localização e estrutura que favorece a experiência dos hóspedes.</p><a href="#contato">Quero investir ↗</a></div>
       </article>
       <article class="path reveal" data-interest="Lançamento">
-        <figure><img src="./public/assets/property-launch.jpg" alt="Lançamento de alto padrão com vista para o mar"></figure>
+        <figure><img src="./public/assets/property-launch.jpg" alt="Lançamento de alto padrão com vista para o mar" width="1200" height="675" loading="lazy" decoding="async"></figure>
         <div><span>03</span><h3>Lançamentos na planta</h3><p>Empreendimentos em diferentes fases, com condições comerciais e potencial de valorização ao longo da obra.</p><a href="#contato">Conhecer lançamentos ↗</a></div>
       </article>
     </section>
@@ -154,15 +222,15 @@
       </div>
       <div class="property-grid">
         <article class="property-card reveal" data-interest="Casa com lazer privativo">
-          <figure><img src="./public/assets/property-house.png" alt="Casa com área externa e hidromassagem"></figure>
+          <figure><img src="./public/assets/property-house.png" alt="Casa com área externa e hidromassagem" width="1800" height="1344" loading="lazy" decoding="async"></figure>
           <div><p>Casa · Bombinhas</p><h3>Espaço, privacidade e lazer para a família.</h3><a href="#contato">Tenho interesse <span>↗</span></a></div>
         </article>
         <article class="property-card reveal" data-interest="Apartamento frente mar">
-          <figure><img src="./public/assets/property-apartment.png" alt="Apartamento amplo com vista para o mar"></figure>
+          <figure><img src="./public/assets/property-apartment.png" alt="Apartamento amplo com vista para o mar" width="1800" height="1098" loading="lazy" decoding="async"></figure>
           <div><p>Apartamento · Vista para o mar</p><h3>Pronto para viver o litoral desde o primeiro dia.</h3><a href="#contato">Tenho interesse <span>↗</span></a></div>
         </article>
         <article class="property-card reveal" data-interest="Empreendimento com lazer completo">
-          <figure><img src="./public/assets/hero-resort.png" alt="Empreendimento com piscinas e lazer completo"></figure>
+          <figure><img src="./public/assets/hero-resort.png" alt="Empreendimento com piscinas e lazer completo" width="1800" height="989" loading="lazy" decoding="async"></figure>
           <div><p>Empreendimento · Alto padrão</p><h3>Estrutura completa entre natureza e sofisticação.</h3><a href="#contato">Tenho interesse <span>↗</span></a></div>
         </article>
       </div>
@@ -193,7 +261,7 @@
         <p class="eyebrow dark">Seu próximo imóvel começa aqui</p>
         <h2>Receba uma seleção feita para você.</h2>
         <p>Converse com a equipe KS e conheça as melhores opções disponíveis para o seu objetivo em Bombinhas.</p>
-        <div class="contact-signature"><img src="./public/assets/logo.png" alt=""><span>Imobiliária KS<br><small>CRECI 8662-J</small></span></div>
+        <div class="contact-signature"><img src="./public/assets/logo.png" alt="" width="106" height="146" loading="lazy" decoding="async"><span>Imobiliária KS<br><small>CRECI 8662-J</small></span></div>
       </div>
       <form class="lead-form light reveal" data-lead-form>
         <input name="interesse_especifico" type="hidden">
