@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conheça um empreendimento exclusivo em Canto Grande, Bombinhas/SC, com unidades de alto padrão, lazer completo e condições de lançamento.">
+  <meta name="description" content="Encontre imóveis prontos, para temporada e lançamentos em Bombinhas com a curadoria local da Imobiliária KS.">
   <meta name="theme-color" content="#082f38">
   <meta name="crm-endpoint" content="">
-  <title>Lançamento em Bombinhas | KS Imóveis</title>
+  <title>Imóveis em Bombinhas | KS Imóveis</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,178 +18,211 @@
       <img src="./public/assets/logo.png" alt="KS Imóveis">
     </a>
     <nav aria-label="Navegação principal">
-      <a href="#empreendimento">O empreendimento</a>
-      <a href="#lazer">Experiência</a>
-      <a href="#localizacao">Localização</a>
+      <a href="#perfis">O que você busca</a>
+      <a href="#regioes">Regiões</a>
+      <a href="#imoveis">Imóveis</a>
     </nav>
-    <a class="header-cta" href="#contato">Quero conhecer <span>↗</span></a>
+    <a class="header-cta" href="#contato">Encontrar meu imóvel <span>↗</span></a>
   </header>
 
   <main>
     <section class="hero" id="inicio">
+      <div class="hero-media" aria-hidden="true">
+        <div class="hero-slide active" style="background-image:url('./public/assets/hero.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('./public/assets/hero-interior.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('./public/assets/hero-resort.png')"></div>
+      </div>
       <div class="hero-shade"></div>
       <div class="hero-content reveal">
-        <p class="eyebrow">Canto Grande · Bombinhas · SC</p>
-        <h1>Entre o mar<br>e o extraordinário.</h1>
-        <p class="hero-copy">Um lançamento exclusivo para viver com liberdade ou investir em um dos destinos mais desejados do litoral catarinense.</p>
+        <p class="eyebrow">Imóveis em Bombinhas · Santa Catarina</p>
+        <h1>Seu lugar<br>perto do mar.</h1>
+        <p class="hero-copy">Prontos, lançamentos e oportunidades para morar, investir ou viver a temporada — com a curadoria de quem conhece cada região.</p>
         <div class="hero-facts">
-          <span>33 unidades</span><span>3 ou 4 suítes</span><span>6.000 m² de lazer</span>
+          <span>+160 imóveis</span><span>Equipe local</span><span>CRECI 8662-J</span>
+        </div>
+        <div class="hero-controls" aria-label="Escolher imagem do banner">
+          <button class="active" type="button" data-slide="0" aria-label="Vista aérea do litoral"></button>
+          <button type="button" data-slide="1" aria-label="Apartamento com vista para o mar"></button>
+          <button type="button" data-slide="2" aria-label="Empreendimento com lazer completo"></button>
         </div>
       </div>
 
       <form class="lead-form reveal" data-lead-form>
-        <p class="form-kicker">Condições de lançamento</p>
-        <h2>Receba plantas, valores e disponibilidade.</h2>
-        <label>Nome completo<input name="nome" type="text" autocomplete="name" required></label>
+        <p class="form-kicker">Curadoria KS</p>
+        <h2>Conte o que você procura.</h2>
+        <p class="form-intro">Um especialista seleciona as opções mais alinhadas ao seu momento.</p>
         <div class="form-row">
-          <label>E-mail<input name="email" type="email" autocomplete="email" required></label>
+          <label>Nome<input name="nome" type="text" autocomplete="name" required></label>
           <label>WhatsApp<input name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" required></label>
         </div>
-        <label>Qual é o seu objetivo?
-          <select name="finalidade" required>
-            <option value="">Selecione</option>
-            <option>Quero morar</option>
-            <option>Quero investir</option>
-            <option>Quero conhecer as condições</option>
-            <option>Quero receber detalhes pelo WhatsApp</option>
-          </select>
-        </label>
+        <div class="form-row">
+          <label>Objetivo
+            <select name="finalidade" required>
+              <option value="">Selecione</option>
+              <option>Quero morar</option><option>Quero investir</option>
+              <option>Quero para temporada</option><option>Ainda estou avaliando</option>
+            </select>
+          </label>
+          <label>Momento do imóvel
+            <select name="momento" required>
+              <option value="">Selecione</option>
+              <option>Pronto</option><option>Lançamento</option><option>Quero ver os dois</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Região
+            <select name="regiao">
+              <option value="">Quero uma indicação</option>
+              <option>Bombas</option><option>Bombinhas</option><option>Mariscal</option>
+              <option>Canto Grande</option><option>Quatro Ilhas</option><option>Morrinhos</option>
+            </select>
+          </label>
+          <label>Faixa de investimento
+            <select name="faixa_investimento">
+              <option value="">Prefiro informar depois</option>
+              <option>Até R$ 800 mil</option><option>R$ 800 mil a R$ 1,5 milhão</option>
+              <option>R$ 1,5 milhão a R$ 3 milhões</option><option>Acima de R$ 3 milhões</option>
+            </select>
+          </label>
+        </div>
         <label class="consent"><input name="consentimento_lgpd" type="checkbox" required> <span>Concordo em receber o contato da equipe KS.</span></label>
-        <button type="submit">Falar com um consultor <span>↗</span></button>
-        <p class="form-note">Atendimento consultivo, sem pressão.</p>
+        <button type="submit">Receber opções selecionadas <span>↗</span></button>
         <div class="form-status" aria-live="polite"></div>
       </form>
-
-      <a class="scroll-hint" href="#empreendimento"><span></span>Descubra</a>
     </section>
 
-    <section class="intro section" id="empreendimento">
+    <section class="intro section" id="perfis">
       <div class="section-heading reveal">
-        <p class="eyebrow dark">Vila Coral · edição limitada</p>
-        <h2>Uma nova forma de viver Canto Grande.</h2>
+        <p class="eyebrow dark">Uma busca mais inteligente</p>
+        <h2>Você não precisa se perder em um catálogo.</h2>
       </div>
       <div class="intro-copy reveal">
-        <p>Arquitetura contemporânea, natureza preservada e o mar como parte da rotina. Um projeto criado para quem não abre mão de espaço, conforto e exclusividade.</p>
-        <a href="#contato" class="text-link">Conhecer as condições <span>↗</span></a>
+        <p>A KS cruza objetivo, região, momento de compra e faixa de investimento para apresentar imóveis que realmente façam sentido para você.</p>
+        <a href="#contato" class="text-link">Começar minha busca <span>↗</span></a>
       </div>
-      <div class="stat reveal"><strong>33</strong><span>unidades<br>exclusivas</span></div>
+      <div class="stat reveal"><strong>160+</strong><span>opções<br>no litoral</span></div>
     </section>
 
-    <section class="gallery-grid">
-      <figure class="gallery-main reveal"><img src="./public/assets/lifestyle.jpg" alt="Área de lazer integrada à natureza"></figure>
-      <div class="unit-types reveal">
-        <p class="eyebrow dark">Tipologias</p>
-        <div><span>01</span><h3>Garden</h3><p>2 ou 3 suítes e área externa privativa.</p></div>
-        <div><span>02</span><h3>Tipo</h3><p>3 ou 4 suítes, amplitude e sofisticação.</p></div>
-        <div><span>03</span><h3>Duplex & cobertura</h3><p>Até 4 suítes, privacidade e vistas memoráveis.</p></div>
-      </div>
+    <section class="search-paths">
+      <article class="path reveal" data-interest="Pronto para morar">
+        <figure><img src="./public/assets/property-apartment.png" alt="Apartamento mobiliado com vista para o mar"></figure>
+        <div><span>01</span><h3>Prontos para viver agora</h3><p>Apartamentos e casas mobiliados, perto do mar e prontos para morar ou aproveitar a temporada.</p><a href="#contato">Quero ver opções ↗</a></div>
+      </article>
+      <article class="path reveal" data-interest="Investimento para temporada">
+        <figure><img src="./public/assets/lifestyle.jpg" alt="Imóvel pensado para viver e investir no litoral"></figure>
+        <div><span>02</span><h3>Investimento & temporada</h3><p>Imóveis com perfil para locação, boa localização e estrutura que favorece a experiência dos hóspedes.</p><a href="#contato">Quero investir ↗</a></div>
+      </article>
+      <article class="path reveal" data-interest="Lançamento">
+        <figure><img src="./public/assets/property-launch.jpg" alt="Lançamento de alto padrão com vista para o mar"></figure>
+        <div><span>03</span><h3>Lançamentos na planta</h3><p>Empreendimentos em diferentes fases, com condições comerciais e potencial de valorização ao longo da obra.</p><a href="#contato">Conhecer lançamentos ↗</a></div>
+      </article>
     </section>
 
-    <section class="experience section" id="lazer">
-      <div class="experience-head reveal">
-        <p class="eyebrow">Mais que lazer</p>
-        <h2>Mais de 6.000 m² para o extraordinário acontecer todos os dias.</h2>
-        <p>Ambientes de lazer e bem-estar criados para transformar a rotina em uma experiência completa, em todas as idades.</p>
+    <section class="regions section" id="regioes">
+      <div class="regions-copy reveal">
+        <p class="eyebrow">Bombinhas, do seu jeito</p>
+        <h2>Cada praia tem um ritmo. A gente ajuda a encontrar o seu.</h2>
+        <p>Da conveniência de Bombas à natureza de Mariscal e Canto Grande, a escolha do endereço muda a experiência — e também a estratégia do investimento.</p>
       </div>
-      <div class="amenities reveal">
-        <p><span>01</span>Academia</p>
-        <p><span>02</span>Piscina aquecida</p>
-        <p><span>03</span>Sala de pickleball</p>
-        <p><span>04</span>Salão de jogos</p>
-        <p><span>05</span>Churrasqueira</p>
-        <p><span>06</span>Pub Sports Bar</p>
-        <p><span>07</span>Piscina infantil</p>
-        <p><span>08</span>Sauna</p>
-        <p><span>09</span>Fire Place</p>
-        <p><span>10</span>Espaço Kids</p>
-        <p><span>11</span>Quadra esportiva</p>
-        <p><span>12</span>Espaço de beleza</p>
-        <p><span>13</span>Salão de festas</p>
-        <p><span>14</span>Espaço Gourmet</p>
-        <p><span>15</span>Restaurantes</p>
+      <div class="region-list reveal">
+        <button type="button" data-region="Bombas"><span>01</span>Bombas<small>Comodidade e acesso</small></button>
+        <button type="button" data-region="Bombinhas"><span>02</span>Bombinhas<small>Centro e vida à beira-mar</small></button>
+        <button type="button" data-region="Mariscal"><span>03</span>Mariscal<small>Natureza e amplitude</small></button>
+        <button type="button" data-region="Canto Grande"><span>04</span>Canto Grande<small>Tranquilidade e paisagem</small></button>
+        <button type="button" data-region="Quatro Ilhas"><span>05</span>Quatro Ilhas<small>Exclusividade e mar aberto</small></button>
+        <button type="button" data-region="Morrinhos"><span>06</span>Morrinhos<small>Águas calmas e pôr do sol</small></button>
       </div>
     </section>
 
-    <section class="overview section" aria-labelledby="overview-title">
-      <div class="overview-title reveal">
-        <p class="eyebrow dark">Tudo em um só endereço</p>
-        <h2 id="overview-title">Um empreendimento pensado por inteiro.</h2>
+    <section class="why section">
+      <div class="why-title reveal">
+        <p class="eyebrow dark">Por que Bombinhas</p>
+        <h2>Natureza, qualidade de vida e procura o ano inteiro.</h2>
       </div>
-      <div class="overview-grid">
-        <article class="overview-item reveal">
-          <span>01</span>
-          <h3>Localização privilegiada</h3>
-          <p>Em um terreno de 30.000 m², com 18.000 m² de área preservada, o projeto une natureza, conveniência e o mar aos seus pés.</p>
+      <div class="why-grid">
+        <article class="reveal"><span>01</span><h3>Praias reconhecidas</h3><p>Conceição, Mariscal e Quatro Ilhas carregam o selo internacional Bandeira Azul.</p></article>
+        <article class="reveal"><span>02</span><h3>Demanda constante</h3><p>Um destino desejado para moradia, férias e locação por temporada em diferentes épocas do ano.</p></article>
+        <article class="reveal"><span>03</span><h3>Conhecimento local</h3><p>Especialistas que conhecem praia, rua, empreendimento e distância real do mar.</p></article>
+      </div>
+    </section>
+
+    <section class="properties section" id="imoveis">
+      <div class="properties-head reveal">
+        <div><p class="eyebrow">Outras possibilidades</p><h2>Imóveis para diferentes formas de viver Bombinhas.</h2></div>
+        <p>Uma pequena amostra do tipo de oportunidade que a equipe KS pode selecionar para o seu perfil.</p>
+      </div>
+      <div class="property-grid">
+        <article class="property-card reveal" data-interest="Casa com lazer privativo">
+          <figure><img src="./public/assets/property-house.png" alt="Casa com área externa e hidromassagem"></figure>
+          <div><p>Casa · Bombinhas</p><h3>Espaço, privacidade e lazer para a família.</h3><a href="#contato">Tenho interesse <span>↗</span></a></div>
         </article>
-        <article class="overview-item reveal">
-          <span>02</span>
-          <h3>Wellness & lazer exclusivos</h3>
-          <p>Mais de 6.000 m² dedicados a lazer, esporte e bem-estar para transformar cada momento em um verdadeiro estilo de vida.</p>
+        <article class="property-card reveal" data-interest="Apartamento frente mar">
+          <figure><img src="./public/assets/property-apartment.png" alt="Apartamento amplo com vista para o mar"></figure>
+          <div><p>Apartamento · Vista para o mar</p><h3>Pronto para viver o litoral desde o primeiro dia.</h3><a href="#contato">Tenho interesse <span>↗</span></a></div>
         </article>
-        <article class="overview-item reveal">
-          <span>03</span>
-          <h3>Endereço do imóvel</h3>
-          <p>Av. dos Coqueiros, Canto Grande, Bombinhas/SC — próximo ao mar e às paisagens mais desejadas da região.</p>
+        <article class="property-card reveal" data-interest="Empreendimento com lazer completo">
+          <figure><img src="./public/assets/hero-resort.png" alt="Empreendimento com piscinas e lazer completo"></figure>
+          <div><p>Empreendimento · Alto padrão</p><h3>Estrutura completa entre natureza e sofisticação.</h3><a href="#contato">Tenho interesse <span>↗</span></a></div>
         </article>
       </div>
+      <p class="availability-note">Imagens ilustrativas do portfólio KS. Disponibilidade e condições devem ser confirmadas com um corretor.</p>
     </section>
 
-    <section class="location section" id="localizacao">
-      <div class="location-copy reveal">
-        <p class="eyebrow dark">Localização privilegiada</p>
-        <h2>Seu lugar entre a natureza e o mar.</h2>
-        <p>Na Av. dos Coqueiros, em Canto Grande: um endereço raro, cercado por praias, conveniência e uma das paisagens mais especiais de Bombinhas.</p>
-        <div class="location-data">
-          <div><strong>30.000</strong><span>m² de terreno</span></div>
-          <div><strong>18.000</strong><span>m² preservados</span></div>
-        </div>
-      </div>
-      <figure class="location-image reveal"><img src="./public/assets/hero.jpg" alt="Vila Coral próximo ao mar em Canto Grande"></figure>
+    <section class="process section">
+      <div class="process-head reveal"><p class="eyebrow dark">Curadoria em quatro passos</p><h2>Menos tempo procurando. Mais segurança para decidir.</h2></div>
+      <ol class="process-list reveal">
+        <li><span>01</span><div><h3>Você conta o que busca</h3><p>Objetivo, região e faixa de investimento.</p></div></li>
+        <li><span>02</span><div><h3>A KS filtra o portfólio</h3><p>Selecionamos apenas opções aderentes.</p></div></li>
+        <li><span>03</span><div><h3>Um especialista apresenta</h3><p>Com contexto real sobre imóvel e localização.</p></div></li>
+        <li><span>04</span><div><h3>Você decide com clareza</h3><p>Com acompanhamento em cada próximo passo.</p></div></li>
+      </ol>
     </section>
 
     <section class="statement">
       <div class="statement-bg"></div>
       <div class="reveal">
         <p class="eyebrow">Bombinhas · Santa Catarina</p>
-        <h2>O mar aos seus pés.<br>O futuro à sua frente.</h2>
-        <p>Para morar, investir ou ter um refúgio que acompanha o seu melhor tempo.</p>
+        <h2>O mar pode fazer<br>parte da sua rotina.</h2>
+        <p>Para morar, investir ou ter um lugar que acompanha o seu melhor tempo.</p>
       </div>
     </section>
 
     <section class="contact section" id="contato">
       <div class="contact-copy reveal">
-        <p class="eyebrow dark">Seu próximo passo</p>
-        <h2>Conheça o Vila Coral em detalhes.</h2>
-        <p>Converse com a equipe KS e receba plantas, valores, disponibilidade e as condições atuais de lançamento.</p>
-        <div class="contact-signature">
-          <img src="./public/assets/logo.png" alt="">
-          <span>Imobiliária KS<br><small>CRECI 8662-J</small></span>
-        </div>
+        <p class="eyebrow dark">Seu próximo imóvel começa aqui</p>
+        <h2>Receba uma seleção feita para você.</h2>
+        <p>Converse com a equipe KS e conheça as melhores opções disponíveis para o seu objetivo em Bombinhas.</p>
+        <div class="contact-signature"><img src="./public/assets/logo.png" alt=""><span>Imobiliária KS<br><small>CRECI 8662-J</small></span></div>
       </div>
       <form class="lead-form light reveal" data-lead-form>
-        <label>Nome completo<input name="nome" type="text" autocomplete="name" required></label>
-        <label>E-mail<input name="email" type="email" autocomplete="email" required></label>
-        <label>WhatsApp<input name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" required></label>
-        <label>Finalidade
-          <select name="finalidade" required>
-            <option value="">Selecione</option>
-            <option>Quero morar</option><option>Quero investir</option>
-            <option>Quero conhecer as condições</option><option>Quero receber detalhes pelo WhatsApp</option>
-          </select>
-        </label>
+        <input name="interesse_especifico" type="hidden">
+        <div class="form-row">
+          <label>Nome<input name="nome" type="text" autocomplete="name" required></label>
+          <label>WhatsApp<input name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" required></label>
+        </div>
+        <label>E-mail<input name="email" type="email" autocomplete="email"></label>
+        <div class="form-row">
+          <label>Objetivo<select name="finalidade" required><option value="">Selecione</option><option>Quero morar</option><option>Quero investir</option><option>Quero para temporada</option><option>Ainda estou avaliando</option></select></label>
+          <label>Momento<select name="momento" required><option value="">Selecione</option><option>Pronto</option><option>Lançamento</option><option>Quero ver os dois</option></select></label>
+        </div>
+        <div class="form-row">
+          <label>Região<select name="regiao"><option value="">Quero uma indicação</option><option>Bombas</option><option>Bombinhas</option><option>Mariscal</option><option>Canto Grande</option><option>Quatro Ilhas</option><option>Morrinhos</option></select></label>
+          <label>Faixa de investimento<select name="faixa_investimento"><option value="">Prefiro informar depois</option><option>Até R$ 800 mil</option><option>R$ 800 mil a R$ 1,5 milhão</option><option>R$ 1,5 milhão a R$ 3 milhões</option><option>Acima de R$ 3 milhões</option></select></label>
+        </div>
         <label class="consent"><input name="consentimento_lgpd" type="checkbox" required> <span>Concordo em receber o contato da equipe KS.</span></label>
-        <button type="submit">Receber informações <span>↗</span></button>
+        <button type="submit">Encontrar meu imóvel <span>↗</span></button>
         <div class="form-status" aria-live="polite"></div>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>Rua Castanheta, 84, Sala 02 · Centro · Bombinhas/SC</p>
+    <div><p>Rua Castanheta, 84, Sala 02 · Centro · Bombinhas/SC</p><p>contato@imobiliariaks.com.br · (47) 99287-7202</p></div>
     <p>© 2026 KS Imóveis · CRECI 8662-J</p>
   </footer>
 
-  <a class="whatsapp" href="https://wa.me/554733691515?text=Olá,%20quero%20conhecer%20o%20Vila%20Coral." target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">WhatsApp <span>↗</span></a>
+  <a class="whatsapp" href="https://wa.me/5547992877202?text=Olá,%20vim%20pela%20página%20de%20imóveis%20em%20Bombinhas." target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">WhatsApp <span>↗</span></a>
   <script>
     const appScript = document.createElement('script');
     appScript.src = location.protocol === 'file:' ? './public/main.js' : '/main.js';
