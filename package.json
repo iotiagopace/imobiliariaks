@@ -1,0 +1,17 @@
+{
+  "name": "imobiliaria-ks-landing",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}
